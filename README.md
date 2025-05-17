@@ -22,3 +22,17 @@ Ustawiamy `procent_na_funkcji` oraz samą funkcję, np. `"x**5 - x**2 + 2*x + 1"
 
 ## Sprawdzanie w sposób sekwencyjny
 Należy ustawić funkcję jaką będziemy sprawdzać w zmiennej `funkcja`. 
+
+# OpenMPI
+`mpiexec -n 4 python openmpi.py`
+-n przekazuje ile wątków chcemy użyć
+
+
+# Implementacja w C++
+## MPI (np. z OpenMPI)
+mpic++ mpi.cpp -o mpi
+mpirun -n 4 ./mpi
+
+## OpenMP
+g++ openmp.cpp -o openmp -fopenmp
+./openmp
